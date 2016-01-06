@@ -1,0 +1,22 @@
+{
+  "name": "header-parser",
+  "version": "1.0.0",
+  "description": "Request head parser microservice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estevanmaito/header-parser-fcc.git"
+  },
+  "author": "Estevan Maito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estevanmaito/header-parser-fcc/issues"
+  },
+  "homepage": "https://github.com/estevanmaito/header-parser-fcc#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
