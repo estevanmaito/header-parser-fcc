@@ -18,12 +18,12 @@ app.get('/', function(req, res) {
 	software = software.match(/[^\(].*[^\)]/g)[0];
 
 	var result = {
-		ipaddress: req.ip,
+		ipaddress: req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress,
 		language: language,
 		software: software
 	};
 
-	res.send(JSON.stringify(result));
+	res.json(result);
 });
 
 app.listen(port, function() {
